@@ -1,0 +1,90 @@
+{
+  "problem_type": "regression",
+  "rf_cv": [
+    {
+      "rmse": 1.0884648679763391,
+      "r2": 0.9278256366703824
+    },
+    {
+      "rmse": 0.6450599303843965,
+      "r2": 0.9747773408013737
+    },
+    {
+      "rmse": 0.8609944962803207,
+      "r2": 0.9535721800659617
+    },
+    {
+      "rmse": 0.5304079327920663,
+      "r2": 0.9788598959126082
+    },
+    {
+      "rmse": 0.5608742553705813,
+      "r2": 0.9762877975346038
+    }
+  ],
+  "xgb_cv": [
+    {
+      "rmse": 1.0503394679131666,
+      "r2": 0.9327931563341431
+    },
+    {
+      "rmse": 0.5858796190325841,
+      "r2": 0.9791930931882353
+    },
+    {
+      "rmse": 0.7273673170677818,
+      "r2": 0.9668651425469879
+    },
+    {
+      "rmse": 0.5046425027519503,
+      "r2": 0.9808638418813443
+    },
+    {
+      "rmse": 0.484432938967503,
+      "r2": 0.982310799148014
+    }
+  ],
+  "feature_importance_path": "outputs\\feature_importance.csv",
+  "outputs_dir": "D:\\ML Model\\outputs",
+  "model_paths": {
+    "xgb_model": "D:\\ML Model\\outputs\\models\\xgb_model.joblib",
+    "rf_model": "D:\\ML Model\\outputs\\models\\rf_model.joblib",
+    "encoder": null,
+    "feature_names": [
+      "daily_revenue_thousands",
+      "daily_expenses_thousands",
+      "units_sold",
+      "website_visits",
+      "conversion_rate_percent",
+      "customer_acquisition_cost",
+      "active_customers",
+      "churn_rate_percent",
+      "marketing_spend_thousands",
+      "rd_spend_thousands",
+      "employee_count",
+      "support_tickets",
+      "avg_resolution_time_hours",
+      "customer_satisfaction_score",
+      "product_returns",
+      "inventory_level",
+      "production_capacity_percent",
+      "supplier_delays",
+      "social_media_engagement",
+      "email_open_rate_percent",
+      "app_downloads",
+      "server_uptime_percent",
+      "api_calls",
+      "daily_profit_thousands",
+      "revenue_per_customer"
+    ]
+  },
+  "crisis": {
+    "adjustments": {
+      "daily_revenue_thousands": 0.8,
+      "marketing_spend_thousands": 1.5
+    },
+    "base_rmse": 2.465048123850157e-07,
+    "crisis_rmse": 0.8278628392985913,
+    "delta_rmse": 0.8278625927937789
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "model_name": "dynamic_profit_model",
+  "config": {
+    "target": "profit_margin_percent",
+    "id_cols": [
+      "date",
+      "company_name"
+    ],
+    "problem_type": "regression",
+    "dataset_shape": [
+      500,
+      28
+    ],
+    "target_stats": {
+      "unique_values": 429,
+      "min": 14.62,
+      "max": 41.23,
+      "mean": 31.592460000000003,
+      "null_count": 0
+    }
+  },
+  "feature_names": [
+    "daily_revenue_thousands",
+    "daily_expenses_thousands",
+    "units_sold",
+    "website_visits",
+    "conversion_rate_percent",
+    "customer_acquisition_cost",
+    "active_customers",
+    "churn_rate_percent",
+    "marketing_spend_thousands",
+    "rd_spend_thousands",
+    "employee_count",
+    "support_tickets",
+    "avg_resolution_time_hours",
+    "customer_satisfaction_score",
+    "product_returns",
+    "inventory_level",
+    "production_capacity_percent",
+    "supplier_delays",
+    "social_media_engagement",
+    "email_open_rate_percent",
+    "app_downloads",
+    "server_uptime_percent",
+    "api_calls",
+    "daily_profit_thousands",
+    "revenue_per_customer"
+  ],
+  "target_name": "profit_margin_percent",
+  "problem_type": "regression",
+  "model_paths": {
+    "rf_model": "D:\\ML Model\\outputs\\models\\dynamic_profit_model\\rf_model.joblib",
+    "xgb_model": "D:\\ML Model\\outputs\\models\\dynamic_profit_model\\xgb_model.joblib"
+  },
+  "results": {
+    "rf_cv": [
+      {
+        "rmse": 1.0884648679763396,
+        "r2": 0.9278256366703823,
+        "mae": 0.5815962499999953
+      },
+      {
+        "rmse": 0.6450599303843958,
+        "r2": 0.9747773408013738,
+        "mae": 0.44153550000001346
+      },
+      {
+        "rmse": 0.8609944962803207,
+        "r2": 0.9535721800659617,
+        "mae": 0.5179114999999982
+      },
+      {
+        "rmse": 0.5304079327920664,
+        "r2": 0.9788598959126082,
+        "mae": 0.3918037499999996
+      },
+      {
+        "rmse": 0.5608742553705812,
+        "r2": 0.9762877975346038,
+        "mae": 0.3369745000000012
+      }
+    ],
+    "xgb_cv": [
+      {
+        "rmse": 1.0503394679131666,
+        "r2": 0.9327931563341431,
+        "mae": 0.5869785133361818
+      },
+      {
+        "rmse": 0.5858796190325841,
+        "r2": 0.9791930931882353,
+        "mae": 0.4149657974243166
+      },
+      {
+        "rmse": 0.7273673170677818,
+        "r2": 0.9668651425469879,
+        "mae": 0.4560474967956542
+      },
+      {
+        "rmse": 0.5046425027519503,
+        "r2": 0.9808638418813443,
+        "mae": 0.3741676483154299
+      },
+      {
+        "rmse": 0.484432938967503,
+        "r2": 0.982310799148014,
+        "mae": 0.3233885223388673
+      }
+    ]
+  },
+  "created_at": "2025-11-29T23:42:29.141281"
+}

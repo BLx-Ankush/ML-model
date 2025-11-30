@@ -1,0 +1,118 @@
+{
+  "model_name": "profitmargin_model",
+  "config": {
+    "target": "profit_margin_percent",
+    "id_cols": [
+      "date",
+      "company_name"
+    ],
+    "problem_type": "regression",
+    "dataset_shape": [
+      500,
+      34
+    ],
+    "target_stats": {
+      "unique_values": 459,
+      "min": 4.47,
+      "max": 47.78,
+      "mean": 27.9944,
+      "null_count": 0
+    }
+  },
+  "feature_names": [
+    "daily_sales_count",
+    "daily_revenue_thousands",
+    "average_transaction_value",
+    "online_sales_percent",
+    "in_store_sales_percent",
+    "daily_foot_traffic",
+    "online_visitors",
+    "conversion_rate_online_percent",
+    "conversion_rate_store_percent",
+    "returning_customers_percent",
+    "customer_loyalty_members",
+    "inventory_turnover_ratio",
+    "stockout_incidents",
+    "days_inventory_outstanding",
+    "supplier_lead_time_days",
+    "warehouse_capacity_percent",
+    "store_locations_active",
+    "staff_count",
+    "avg_staff_productivity_score",
+    "operational_hours",
+    "marketing_roi_percent",
+    "social_media_followers",
+    "customer_review_rating",
+    "customer_complaints",
+    "net_promoter_score",
+    "operating_expenses_thousands",
+    "discount_rate_avg_percent",
+    "payment_processing_fees_thousands",
+    "daily_profit_thousands",
+    "revenue_per_transaction",
+    "cost_per_customer_acquired"
+  ],
+  "target_name": "profit_margin_percent",
+  "problem_type": "regression",
+  "model_paths": {
+    "rf_model": "D:\\ML Model\\outputs\\models\\profitmargin_model\\rf_model.joblib",
+    "xgb_model": "D:\\ML Model\\outputs\\models\\profitmargin_model\\xgb_model.joblib"
+  },
+  "results": {
+    "rf_cv": [
+      {
+        "rmse": 1.1013499845558912,
+        "r2": 0.9775176839560903,
+        "mae": 0.8697907500000034
+      },
+      {
+        "rmse": 1.3246957121448726,
+        "r2": 0.9731568782482803,
+        "mae": 0.8646650000000037
+      },
+      {
+        "rmse": 0.8678041193185541,
+        "r2": 0.9886969737097918,
+        "mae": 0.6539032500000004
+      },
+      {
+        "rmse": 0.9882378330550124,
+        "r2": 0.980858033214437,
+        "mae": 0.7344692500000055
+      },
+      {
+        "rmse": 1.2128680179460032,
+        "r2": 0.9763105937520558,
+        "mae": 0.8058292500000043
+      }
+    ],
+    "xgb_cv": [
+      {
+        "rmse": 0.901836616183312,
+        "r2": 0.9849253902691667,
+        "mae": 0.6643513114929198
+      },
+      {
+        "rmse": 1.163510964442451,
+        "r2": 0.9792918300477746,
+        "mae": 0.7756446613311766
+      },
+      {
+        "rmse": 0.8043287872095122,
+        "r2": 0.9902900152423173,
+        "mae": 0.610599485206604
+      },
+      {
+        "rmse": 0.9262662795827895,
+        "r2": 0.9831835115218122,
+        "mae": 0.7329474906921388
+      },
+      {
+        "rmse": 0.9801799017501988,
+        "r2": 0.9845282772808857,
+        "mae": 0.7038866989135747
+      }
+    ]
+  },
+  "created_at": "2025-11-30T11:27:10.287187"
+}
